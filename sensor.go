@@ -40,6 +40,7 @@ type Sensor struct {
 		Daylight     bool       `json:"daylight"`    // True if day & false if night
 		LastUpdated  UpdateTime `json:"lastupdated"` // Time of last update
 		ButtonEvent  uint16     `json:"buttonevent"` // ID of button event
+		Temperature  uint16     `json:"temperature"` // Temperature reading in Celcius
 	} `json:"state"`
 
 	Config struct {
